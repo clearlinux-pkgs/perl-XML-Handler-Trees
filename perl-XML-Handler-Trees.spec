@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-Handler-Trees
 Version  : 0.02
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/E/EB/EBOHLMAN/XML-Handler-Trees-0.02.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/E/EB/EBOHLMAN/XML-Handler-Trees-0.02.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-handler-trees-perl/libxml-handler-trees-perl_0.02-7.debian.tar.xz
@@ -80,7 +80,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-XML-Handler-Trees
-cp %{_builddir}/XML-Handler-Trees-0.02/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-XML-Handler-Trees/41b98e446c8a2ae8a5e682d258ee649cdefe9560
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-XML-Handler-Trees/41b98e446c8a2ae8a5e682d258ee649cdefe9560
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -104,4 +104,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Handler/Trees.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Handler/Trees.pm
