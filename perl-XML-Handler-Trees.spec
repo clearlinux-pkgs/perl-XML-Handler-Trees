@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-Handler-Trees
 Version  : 0.02
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/E/EB/EBOHLMAN/XML-Handler-Trees-0.02.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/E/EB/EBOHLMAN/XML-Handler-Trees-0.02.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-handler-trees-perl/libxml-handler-trees-perl_0.02-7.debian.tar.xz
